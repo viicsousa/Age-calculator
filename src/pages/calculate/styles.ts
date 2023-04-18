@@ -11,13 +11,15 @@ export const Container = styled.div`
 
 export const Card = styled.div`
   display: flex;
+  flex-direction: column;
   background-color: #FFFFFF;
-  padding: 10rem;
-  border-radius: 3rem 3rem 7rem 3rem;
+  padding: 3rem;
+  border-radius: 2rem 2rem 7rem 2rem;
 `;
 
 export const ContainerInputs = styled.div`
   display: flex;
+  align-items: center;
   gap: 0.5rem;
 `;
 
@@ -46,6 +48,23 @@ export const Input = styled.input`
 
 `;
 
-export const DivisionButton = styled.div``;
+export const DivisionButton = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+  div {
+    width: 30rem;
+    height: 1px;
+    background-color: #c1c1c1;
+  }
+`;
+
+export const Button = styled.button`
+  background: #844dfa;
+  border: none;
+  color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 1rem;
+`;
 
 export const Age = styled.div``;
