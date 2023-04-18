@@ -7,6 +7,7 @@ export const Container = styled.div`
   background: #c9c9c9;
   width: 100%;
   min-height: 100vh;
+  height: 100%;
 `;
 
 export const Card = styled.div`
@@ -53,7 +54,7 @@ export const DivisionButton = styled.div`
   align-items: center;
   padding: 0.8rem 0;
   div {
-    width: 30rem;
+    width: 27rem;
     height: 1px;
     background-color: #c1c1c1;
   }
@@ -67,4 +68,31 @@ export const Button = styled.button`
   border-radius: 1rem;
 `;
 
-export const Age = styled.div``;
+export const ContainerAge = styled.div`
+  display: flex;
+  flex-direction: column;
+  
+`;
+
+export const Age = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+`;
+
+export const Number = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  .nonenumber {
+    width: 2.5rem;
+    height: 0.5rem;
+    background: #844dfa;
+  }
+`;
+
+export const Text = styled.div`
+  color: #000000;
+  font-size: 75px;
+  font-weight: 700;
+`;
