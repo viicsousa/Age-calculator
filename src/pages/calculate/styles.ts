@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 3rem;
   border-radius: 2rem 2rem 7rem 2rem;
 `;
@@ -27,7 +27,6 @@ export const ContainerInputs = styled.div`
 export const Inputs = styled.div`
   display: flex;
   flex-direction: column;
-  
 `;
 
 export const Label = styled.label`
@@ -46,7 +45,6 @@ export const Input = styled.input`
     color: #c1c1c1;
     font-weight: bold;
   }
-
 `;
 
 export const DivisionButton = styled.div`
@@ -63,7 +61,7 @@ export const DivisionButton = styled.div`
 export const Button = styled.button`
   background: #844dfa;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 1rem;
   border-radius: 1rem;
 `;
@@ -71,7 +69,6 @@ export const Button = styled.button`
 export const ContainerAge = styled.div`
   display: flex;
   flex-direction: column;
-  
 `;
 
 export const Age = styled.div`
@@ -86,8 +83,11 @@ export const Number = styled.div`
   gap: 0.5rem;
   .nonenumber {
     width: 2.5rem;
-    height: 0.5rem;
+    height: 0.6rem;
     background: #844dfa;
+    -webkit-transform: skew(20deg); /* Chrome, Opera */
+    -ms-transform: skew(20deg); /* IE */
+    transform: skew(20deg); /* Padrão */
   }
 `;
 
