@@ -18,11 +18,17 @@ export const Card = styled.div`
   border-radius: 2rem 2rem 7rem 2rem;
 `;
 
-export const ContainerInputs = styled.div`
+export const ContainerInputs = styled.form`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const CardsInputs = styled.div`
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 0.5rem;
-`;
+`
 
 export const Inputs = styled.div`
   display: flex;
@@ -41,10 +47,20 @@ export const Input = styled.input`
   padding: 0.7rem;
   width: 6rem;
   color: #7c7c7c;
+  scroll-behavior: hidden;
   ::placeholder {
     color: #c1c1c1;
     font-weight: bold;
   }
+  .error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
 `;
 
 export const DivisionButton = styled.div`
@@ -69,6 +85,7 @@ export const Button = styled.button`
 export const ContainerAge = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
 `;
 
 export const Age = styled.div`
@@ -76,6 +93,11 @@ export const Age = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
+  .birthday {
+    color: #844dfa;
+    font-size: 54px;
+    font-weight: 700;
+  }
 `;
 
 export const Number = styled.div`
